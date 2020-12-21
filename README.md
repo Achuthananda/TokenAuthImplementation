@@ -11,16 +11,16 @@ $pip install -r requirements.txt
 
 Set up the Segmented Media Protection Behavior in the delivery config and make a note of the key.
 
-![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/assets/smp.png)
+![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/smp.png)
 
 # Step 2: HTTP Server Running.
 
 Now, lets set up a Flask based python server that will listen on port 5000. This server on getting requests on path /getToken will generate the short token. This server has already the key configured in the delivery config.
 
-![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/assets/server.png)
+![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/server.png)
 
 # Step 3:  Integrate Token Fetching into the player's logic.
 
 Integrate a HLS video player using videojs library in an HTML Page. This page takes the url and gets the token from the server which we setup.
 
-![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/assets/html.png)
+![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/html.png)
