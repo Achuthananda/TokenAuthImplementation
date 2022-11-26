@@ -27,7 +27,14 @@ Integrate a HLS video player using videojs library in an HTML Page. This page ta
 ### Without Token
 ![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/withouttoken.jpg)
 
+
+
 ### With Token
+First token will be fetched from the token server
 ![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/tokencall.jpg)
+
+Next master manifest will be requested using the short token
 ![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/shorttoken.jpg)
+
+The urls of the child manifest and segments will be having long token in the url
 ![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/lontoken.jpg)
