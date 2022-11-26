@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>HLS Live</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="token.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Akamai Token Auth Example</h2>
+        <form class="form-horizontal" action="">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="url">URL:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="url" placeholder="Enter URL" name="url">
+              </div>
+          </div>
+
+          <form class="form-horizontal" action="">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-md-4">
+          <input id="withToken" type="submit" name="withToken" value="withToken" />
+            <div class="col-md-8">
+          <input id="withoutToken" type="submit" name="withoutToken" value="withoutToken" />
+            </div>
+          </div>
+          </div>
+        </form>
+      </form>
+      <video id="my_video_1" width="80" height="100" class="video-js vjs-fluid vjs-default-skin" controls preload="auto" data-setup='{}'>
+        <source id="video_src" src="https://multiplatform-f.akamaihd.net/i/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,.mp4.csmil/master.m3u8" type="application/x-mpegURL">
+      </video>
+
+    </div>
+
+
+
+
+  </body>
+
+</html>
