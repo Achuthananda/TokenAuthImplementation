@@ -1,5 +1,8 @@
-# Token Auth at Player Side
-This repo is an implementation of how to integrate the hls video player and token generation from python server and using the token to play back the content.
+# Akamai Token Authentication
+Akamai Token Authentication is the process of generating tokens, associating them with an authenticated user session, and then validating the stream using these tokens to prevent unauthorized sharing of links to your content. You can read more about Token Auth [here](https://techdocs.akamai.com/adaptive-media-delivery/docs/add-token-auth).
+
+This repo is an implementation of how to integrate the hls video player and Akamai token generation from python server and using the token to play back the content.
+
 
 ![alt text1](https://github.com/Achuthananda/TokenAuthImplementation/blob/master/images/tokenauthworkflow.jpg)
 
